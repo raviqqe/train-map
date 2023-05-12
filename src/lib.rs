@@ -39,6 +39,12 @@ impl<'a, K: Eq + Hash, V> TrainMap<'a, K, V> {
     }
 }
 
+impl<'a, K: Eq + Hash, V> Default for TrainMap<'a, K, V> {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl<'a, K: Eq + Hash, V> Extend<(K, V)> for TrainMap<'a, K, V> {
     fn extend<T: IntoIterator<Item = (K, V)>>(&mut self, iterator: T) {
         self.map.extend(iterator)
