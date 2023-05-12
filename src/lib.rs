@@ -1,3 +1,5 @@
+#![doc = include_str!("../README.md")]
+
 use std::{borrow::Borrow, collections::HashMap, hash::Hash};
 
 #[derive(Clone, Debug)]
