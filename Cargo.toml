@@ -1,6 +1,7 @@
 [package]
 name = "train-map"
 description = "Trained HashMap"
+repository = "https://github.com/raviqqe/train-map"
 license-file = "UNLICENSE"
 version = "0.1.0"
 edition = "2021"
