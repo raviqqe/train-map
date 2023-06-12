@@ -16,6 +16,13 @@ impl<'a, K: Eq + Hash, V> TrainMap<'a, K, V> {
         }
     }
 
+    pub fn with_capacity(capacity: usize) -> Self {
+        Self {
+            map: HashMap::with_capacity(capacity),
+            parent: None,
+        }
+    }
+
     pub fn get<Q: Eq + Hash + ?Sized>(&self, key: &Q) -> Option<&V>
     where
         K: Borrow<Q>,
