@@ -10,4 +10,4 @@ Trained `HashMap`.
 
 [The Unlicense][license]
 
-license: https://github.com/raviqqe/train-map/blob/main/UNLICENSE
+[license]: https://github.com/raviqqe/train-map/blob/main/UNLICENSE
