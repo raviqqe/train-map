@@ -1,6 +1,6 @@
 [package]
 name = "train-map"
-version = "0.1.2"
+version = "0.1.3"
 edition = "2024"
 description = "A trained hash map"
 repository = "https://github.com/raviqqe/train-map"
