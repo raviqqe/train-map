@@ -23,16 +23,16 @@ impl<'a, K: Eq + Hash, V> TrainMap<'a, K, V> {
 }
 
 impl<'a, K: Eq + Hash, V, S: BuildHasher> TrainMap<'a, K, V, S> {
-    pub fn with_hasher(hash_builder: S) -> Self {
+    pub fn with_hasher(hasher: S) -> Self {
         Self {
-            map: HashMap::with_hasher(hash_builder),
+            map: HashMap::with_hasher(hasher),
             parent: None,
         }
     }
 
-    pub fn with_capacity_and_hasher(capacity: usize, hash_builder: S) -> Self {
+    pub fn with_capacity_and_hasher(capacity: usize, hasher: S) -> Self {
         Self {
-            map: HashMap::with_capacity_and_hasher(capacity, hash_builder),
+            map: HashMap::with_capacity_and_hasher(capacity, hasher),
             parent: None,
         }
     }
